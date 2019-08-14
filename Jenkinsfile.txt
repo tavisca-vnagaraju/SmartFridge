@@ -27,5 +27,10 @@ pipeline {
             archiveArtifacts '**'
         }
     }
+    post{
+        steps{
+            sh 'SmartFridge/bin/Debug/netcoreapp2.2/publish/SmartFridge.dll'
+        }
+    }
 	
 }
