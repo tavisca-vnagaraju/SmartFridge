@@ -18,7 +18,7 @@ pipeline {
 	stage('Publish') {
             steps {
                 sh 'dotnet publish'
-                echo "Testing.........."
+                echo "Testing......................"
             }
         }
     }
