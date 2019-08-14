@@ -28,7 +28,7 @@ pipeline {
         }
     }
     post{
-        steps{
+        success{
             sh 'SmartFridge/bin/Debug/netcoreapp2.2/publish/SmartFridge.dll'
         }
     }
