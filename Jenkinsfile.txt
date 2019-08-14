@@ -24,7 +24,7 @@ pipeline {
     }
     post{
         always{
-            archiveArtifacts '**'
+            archiveArtifacts '**' , fingerprint:true
             sh 'SmartFridge/bin/Debug/netcoreapp2.2/Release/SmartFridge.dll'
         }
     }
